@@ -1,0 +1,18 @@
+package com.jsp.controller;
+
+import com.jsp.dao.StudentDao;
+import com.jsp.dto.Student;
+
+public class StudentController {
+	public static void main(String[] args) {
+		Student student = new Student();
+		student.setId(2);
+		student.setName("Soham");
+		student.setEmail("soham420@gmail.com");
+		student.setGender("M");
+		student.setCno(7972345689l);
+
+		StudentDao studentdDao = new StudentDao();
+		studentdDao.saveStudent(student);
+	}
+}
